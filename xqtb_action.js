@@ -11,6 +11,7 @@ if (process.env.XQTB_TOKEN) {
         console.log(`您的token选择的是用换行隔开\n`)
         tokenArr = process.env.XQTB_TOKEN.split('\n');
     } else {
+        console.log(`只有一个账号\n`)
         tokenArr = [process.env.XQTB_TOKEN];
     }
 }
@@ -46,11 +47,10 @@ function sign(token) {
         $.get(request, (err, resp, data) => {
             try {
               if (err) {
-                console.log('错误')
-                console.log(`${JSON.stringify(err)}`)
+                console.log(`错误 ${JSON.stringify(err)}`)
               } else {
                 if (data) {
-                  console.log(`喂食结果：${data}`)
+                  console.log(`成功结果：${data}`)
                   data = JSON.parse(data);
                   if (data.ResponseStatus.ErrorCode == 0) {
                     console.log('签到成功')
