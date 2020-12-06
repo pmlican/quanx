@@ -1,4 +1,3 @@
-
 /*
 星趣童堡签到：连续5天签到可以换5个赠币
 
@@ -11,6 +10,8 @@ Quantumult X
 # 获取星趣童堡cookie
 ^https:\/\/pw\.gzych\.vip\/ykb_huiyuan\/api\/v1\/Member\/GetMemberStoredValue url script-request-header https://raw.githubusercontent.com/pmlican/quanx/main/xqtb.js
 
+[mitm]
+hostname = pw.gzych.vip
 */
 
 const CheckinURL = 'https://pw.gzych.vip/ykb_huiyuan/api/v1/MemberCheckIn/Submit'
