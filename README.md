@@ -8,3 +8,6 @@
 [rewrite_local]  
 ^https:\/\/pw\.gzych\.vip\/ykb_huiyuan\/api\/v1\/Member\/GetMemberStoredValue url script-request-header https://raw.githubusercontent.com/pmlican/quanx/main/xqtb.js
 
+[mitm]  
+hostname = pw.gzych.vip
+
